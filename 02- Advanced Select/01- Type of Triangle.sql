@@ -11,10 +11,13 @@ The TRIANGLES table is described as follows:
 
 */
 
-
-
-
-
+SELECT CASE 
+WHEN A + B <= C OR A + C <= B OR B + C <= A THEN 'Not A Triangle' 
+WHEN A = B AND B = C THEN 'Equilateral' 
+WHEN A = B OR B = C OR A = C THEN 'Isosceles' 
+ELSE 'Scalene' 
+END 
+FROM TRIANGLES;
 
 /*
 
@@ -32,7 +35,8 @@ CASE
     ELSE result3
 END
 
----------------------SELECT limiations----------------------------
+---------------------------SELECT limiations----------------------------
+
 The limitation of the SELECT statement that leads us to use CASE is its lack of built-in conditional logic for dynamic categorization. 
 Without CASE, SQL lacks a direct way to:
 
