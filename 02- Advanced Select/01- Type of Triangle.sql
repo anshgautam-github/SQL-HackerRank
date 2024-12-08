@@ -35,6 +35,14 @@ CASE
     ELSE result3
 END
 
+---------------------------WHY NOT A TRIANGLE CONDITION SHOULD COME FIRST?------------------------
+Example of Side Lengths:
+A	B	C
+1	2	3
+
+A is not equal to B, B is not equal to C, C is not equal to A -> Scalene triangle, if we don't place NOT A TRIANGLE CONDITION SHOULD COME FIRST
+But in actual NOT A TRIANGLE CONDITION should come because A+B < C  
+
 ---------------------------SELECT limiations----------------------------
 
 The limitation of the SELECT statement that leads us to use CASE is its lack of built-in conditional logic for dynamic categorization. 
@@ -51,8 +59,4 @@ If you want to assign labels like "Equilateral" or "Scalene" based on the values
 3- Avoid Repetition of Logic:
 Without CASE, you would need multiple SELECT statements or complex WHERE clauses to implement conditional logic,
 resulting in redundancy and reduced readability.
-
-
-
-
 */
